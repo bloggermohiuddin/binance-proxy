@@ -1,16 +1,21 @@
 # Binance API Proxy
 
-A simple Vercel serverless function that proxies requests to Binance API, bypassing geo-restrictions.
+A Vercel serverless function that proxies requests to Binance API from Frankfurt, Germany (bypasses geo-restrictions).
 
-## Usage
+## URL
 
 ```
-https://binance-proxy-six-kohl.vercel.app/proxy?path=/api/v3/time
-https://binance-proxy-six-kohl.vercel.app/proxy?path=/sapi/v1/capital/deposit/hisrec&query=coin=USDT
+https://binance-proxy-six-kohl.vercel.app
 ```
+
+## Examples
+
+- `?path=/api/v3/time`
+- `?path=/sapi/v1/capital/deposit/hisrec&query=coin=USDT`
+- `?path=/api/v3/ticker/price&query=symbol=BTCUSDT`
 
 ## Deploy
 
 1. Import this repo to Vercel
-2. Set region to `fra1` (Frankfurt, Germany) via vercel.json
+2. Region is set to `fra1` (Frankfurt) via vercel.json
 3. Use the URL in your application's Binance proxy config
