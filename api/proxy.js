@@ -30,8 +30,8 @@ pre{background:#1e1e1e;color:#d4d4d4;padding:16px;border-radius:8px;overflow-x:a
 <p>Proxies requests to Binance API from a non-restricted region.</p>
 
 <h2>Usage</h2>
-<pre>?<span class="param">path</span>=<span class="url">/api/v3/time</span>
-?<span class="param">path</span>=<span class="url">/sapi/v1/capital/deposit/hisrec</span>&<span class="param">query</span>=<span class="url">coin=USDT</span></pre>
+<pre><span class="url">https://binance-proxy-six-kohl.vercel.app</span>?<span class="param">path</span>=<span class="url">/api/v3/time</span>
+<span class="url">https://binance-proxy-six-kohl.vercel.app</span>?<span class="param">path</span>=<span class="url">/sapi/v1/capital/deposit/hisrec</span>&<span class="param">query</span>=<span class="url">coin=USDT</span></pre>
 
 <h2>Examples</h2>
 <p><a href="?path=/api/v3/time">Server time</a></p>
@@ -48,8 +48,9 @@ pre{background:#1e1e1e;color:#d4d4d4;padding:16px;border-radius:8px;overflow-x:a
 
   try {
     const headers = {};
-    if (req.headers['x-mbx-apikey']) {
-      headers['X-MBX-APIKEY'] = req.headers['x-mbx-apikey'];
+    const apikey = req.headers['x-mbx-apikey'];
+    if (apikey) {
+      headers['X-MBX-APIKEY'] = apikey;
     }
 
     const response = await fetch(binanceUrl, { method: req.method, headers });
