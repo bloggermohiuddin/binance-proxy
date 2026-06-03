@@ -12,5 +12,5 @@
       "dest": "api/proxy.js"
     }
   ],
-  "regions": ["iad1"]
+  "regions": ["fra1"]
 }
