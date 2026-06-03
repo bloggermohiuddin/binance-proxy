@@ -5,8 +5,8 @@ A simple Vercel serverless function that proxies requests to Binance API, bypass
 ## Usage
 
 ```
-https://your-app.vercel.app/proxy?path=/api/v3/time
-https://your-app.vercel.app/proxy?path=/sapi/v1/capital/deposit/hisrec&query=coin=USDT
+https://binance-proxy-six-kohl.vercel.app/proxy?path=/api/v3/time
+https://binance-proxy-six-kohl.vercel.app/proxy?path=/sapi/v1/capital/deposit/hisrec&query=coin=USDT
 ```
 
 ## Deploy
