@@ -12,5 +12,5 @@ https://binance-proxy-six-kohl.vercel.app/proxy?path=/sapi/v1/capital/deposit/hi
 ## Deploy
 
 1. Import this repo to Vercel
-2. Set region to `iad1` (US East) via vercel.json
+2. Set region to `fra1` (Frankfurt, Germany) via vercel.json
 3. Use the URL in your application's Binance proxy config
